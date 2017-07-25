@@ -37,7 +37,7 @@ LOCAL_SRC_FILES := \
 	endif
 
 	BOSSAC_LOG = 1
-	LOCAL_LDLIBS := -llog
+	LOCAL_LDLIBS := -ldl -llog
 	LOCAL_CPPFLAGS += -DBOSSAC_LOG
 
 	LOCAL_CPP_FEATURES += exceptions
